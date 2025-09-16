@@ -23,7 +23,7 @@
 </p>
 
 ## 📈 Profile Visits
-![Visitor Count](https://profile-counter.glitch.me/MdAfzaalkhan/count.svg)
+![Profile Views](https://komarev.com/ghpvc/?username=MdAfzaalkhan&color=blue)
 
 ## 📫 Contact
 - GitHub: [MdAfzaalkhan](https://github.com/MdAfzaalkhan)
