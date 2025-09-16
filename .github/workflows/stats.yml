@@ -13,29 +13,22 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v4
 
-      # GitHub Stats Card
-      - name: Generate GitHub Stats
-        uses: anuraghazra/github-readme-stats@master
-        env:
-          PAT_1: ${{ secrets.Readme_Stats }}
-        with:
-          username: MdAfzaalkhan
-          show_icons: true
-          theme: radical
-          cache_seconds: 604800
-          output: ./stats.svg
+      # Download GitHub Stats
+      - name: Download GitHub Stats
+        run: |
+          curl -s "https://github-readme-stats.vercel.app/api?username=MdAfzaalkhan&show_icons=true&theme=radical&count_private=true&hide_border=true" -o stats.svg
 
-      # Streak Stats Card
+      # Download Streak Stats
       - name: Download Streak Stats
         run: |
-          curl -o streak.svg "https://streak-stats.demolab.com?user=MdAfzaalkhan&theme=radical&hide_border=true"
+          curl -s "https://streak-stats.demolab.com?user=MdAfzaalkhan&theme=radical&hide_border=true" -o streak.svg
 
-      # Top Languages Card
-      - name: Generate Top Languages
+      # Download Top Languages
+      - name: Download Top Languages
         run: |
-          curl -o langs.svg "https://github-readme-stats.vercel.app/api/top-langs/?username=MdAfzaalkhan&layout=compact&theme=radical"
+          curl -s "https://github-readme-stats.vercel.app/api/top-langs/?username=MdAfzaalkhan&layout=compact&theme=radical&count_private=true&hide_border=true" -o langs.svg
 
-      # Commit generated files
+      # Commit updated files
       - name: Commit stats
         run: |
           git config user.name "github-actions[bot]"
