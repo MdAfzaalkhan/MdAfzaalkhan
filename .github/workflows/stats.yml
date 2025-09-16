@@ -1,0 +1,32 @@
+name: Generate GitHub Stats
+
+on:
+  schedule:
+    - cron: "0 0 * * 0"   # runs every weekend
+  workflow_dispatch:       # allow manual trigger
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Generate GitHub Stats
+        uses: anuraghazra/github-readme-stats@master
+        env:
+          PAT_1: ${{ secrets.Readme_Stats }}
+        with:
+          username: MdAfzaalkhan
+          show_icons: true
+          theme: radical
+          cache_seconds: 86400
+          output: ./stats.svg
+
+      - name: Commit stats
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add stats.svg
+          git commit -m "Update stats"
+          git push
