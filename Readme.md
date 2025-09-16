@@ -9,10 +9,22 @@
 ## 🔥 Streak Stats
 ![GitHub Streak](https://streak-stats.demolab.com?user=MdAfzaalkhan&theme=radical&hide_border=true)
 
+## 🏆 GitHub Trophies
+![Trophy](https://github-profile-trophy.vercel.app/?username=MdAfzaalkhan&theme=radical)
 
-## About
-- Software developer focused on web & mobile.
-- Building stuff with React, React Native, Next.js, Node.
+## 👨‍💻 Tech Stack
+<p>
+  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"/>
+  <img src="https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"/>
+  <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white"/>
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white"/>
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"/>
+</p>
 
-## Contact
+## 📈 Profile Visits
+![Visitor Count](https://profile-counter.glitch.me/MdAfzaalkhan/count.svg)
+
+## 📫 Contact
 - GitHub: [MdAfzaalkhan](https://github.com/MdAfzaalkhan)
+- Email: afzalkhan989011@gmail.com
